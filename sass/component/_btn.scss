@@ -1,0 +1,9 @@
+// .outlinex {
+//   @include btn(300px,red,white,12px)
+// }
+
+.server-btn{
+    @include btnGetor(378px, 25px, 18px,
+                      white,#0F3D3E, white,null,
+                      white, 5px );
+}

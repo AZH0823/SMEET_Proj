@@ -1,0 +1,50 @@
+// viewpoint 斷點宣告
+// 720px 
+@mixin pad(){
+    @media all and (max-width: $l_breakpoint){
+        @content;
+        
+    }
+}
+// 428px
+@mixin moblie(){
+    @media all and (max-width: $m_breakpoint){
+        @content;
+    }
+}
+
+
+// ==字重
+// font weight 
+@mixin font($size){
+    @if $size == bold {
+        font-weight: bold;
+    }@else if $size == medium {
+        font-weight: 400;
+    }@else if $size == light {
+        font-weight: 100;
+    }
+}
+
+// btn Gentor
+@mixin btnGetor($width, $paddingX, $paddingY,
+            $color, $hoverbgc, $hoverColor,$bgc:null,
+           $border_color:null, $border_radius:null) {
+  box-sizing: border-box;
+  width: $width;
+  padding: $paddingX $paddingY;
+  cursor: pointer;
+  color:$color;
+  border: 1px solid $border_color;
+  border-radius: $border_radius;
+  transition: 0.2s all ease-in-out;
+  text-align: center;
+
+  &:hover {
+    background-color: $hoverbgc;
+    color: $hoverColor;
+    border: 0px;
+  }
+
+
+}

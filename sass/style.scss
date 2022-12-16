@@ -1,0 +1,101 @@
+@use "sass:math";
+
+// 基本變數定義
+@import "base/base";
+
+// mixin 規範
+@import "mixin/mixin";
+
+// component
+@import "./component/component";
+
+
+// page
+@import "./page/about";
+@import "./page/cartDetail";
+@import "./page/chefTeam";
+@import "./page/common";
+@import "./page/common_back";
+@import "./page/contact";
+@import "./page/contactUs_back";
+@import "./page/index";
+@import "./page/index_back";
+@import "./page/meberManger_back";
+@import "./page/member";
+@import "./page/menu";
+@import "./page/message_back";
+@import "./page/news";
+@import "./page/news_back";
+@import "./page/newsDetail";
+@import "./page/orderList";
+@import "./page/orderList_back";
+@import "./page/reseve";
+@import "./page/shopMall";
+@import "./page/shopMallDetail";
+
+
+body{
+  font-family: "Didot", "Noto Sans TC", "Noto Serif TC";
+  line-height: 1.6;
+  font-size: 16px;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+.fulid_wrapper{
+  margin: 0  auto;
+  width: 100%;
+}
+.wrapper{
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+//==========================字重
+.font_bold{
+  @include font(bold);
+}
+.font_med{
+  @include font(medium);
+}
+.font_light{
+  @include font(light);
+}
+
+//========================== 字型
+//  英文字
+.font_family_eng{
+  font-family: $font_family_e;
+}
+// 中文明體(標題字用到)
+.font_family_tc{
+  font-family: $font_family_c;
+}
+
+// 中文黑體(內文)
+.font_family_tc2{
+  font-family: $font_family_c2;
+}
+
+//========================== 字級
+@each $k, $v in $font_size{
+  #{$k}{
+      font-size: $v;
+      letter-spacing: $v * 0.07;
+  }
+}
+@include moblie(){
+  @each $k, $v in $font_size_rwd{
+      #{$k}{
+          font-size: $v;
+          letter-spacing: $v * 0.07;
+      }
+  }
+}
+//==========================顏色
+@each $k, $v in $color{
+  .#{$k}{
+      color: $v;
+  }
+}
+
+
