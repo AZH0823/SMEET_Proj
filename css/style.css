@@ -66,7 +66,7 @@ table {
 }
 
 body {
-  font-family: "Didot", "Noto Sans TC", "Noto Serif TC";
+  font-family: "Noto Sans TC";
   line-height: 1.6;
   font-size: 16px;
   letter-spacing: 1px;
@@ -95,15 +95,15 @@ body {
   font-weight: 100;
 }
 
-.font_family_eng {
+.font_eng {
   font-family: "Didot";
 }
 
-.font_family_tc {
+.font_tc {
   font-family: "Noto Serif TC";
 }
 
-.font_family_tc2 {
+.font_tc2 {
   font-family: "Noto Sans TC";
 }
 
