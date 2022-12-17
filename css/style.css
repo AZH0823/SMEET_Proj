@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,7 +52,7 @@ table {
   border-spacing: 0;
 }
 
-.server-btn {
+.server_btn {
   box-sizing: border-box;
   width: 378px;
   padding: 25px 18px;
@@ -59,18 +63,17 @@ table {
   transition: 0.2s all ease-in-out;
   text-align: center;
 }
-.server-btn:hover {
+.server_btn:hover {
   background-color: #0F3D3E;
   color: white;
   border: 0px;
 }
 
 body {
-  font-family: "Didot", "Noto Sans TC", "Noto Serif TC";
+  font-family: "Noto Sans TC";
   line-height: 1.6;
   font-size: 16px;
   letter-spacing: 1px;
-  box-sizing: border-box;
 }
 
 .fulid_wrapper {
@@ -95,15 +98,15 @@ body {
   font-weight: 100;
 }
 
-.font_family_eng {
+.font_eng {
   font-family: "Didot";
 }
 
-.font_family_tc {
+.font_tc {
   font-family: "Noto Serif TC";
 }
 
-.font_family_tc2 {
+.font_tc2 {
   font-family: "Noto Sans TC";
 }
 
@@ -183,27 +186,27 @@ h6 {
     letter-spacing: 1.12px;
   }
 }
-.green-1 {
+.green_1 {
   color: #0F3D3E;
 }
 
-.green-2 {
+.green_2 {
   color: #164D4F;
 }
 
-.green-3 {
+.green_3 {
   color: #59886B;
 }
 
-.Camel-1 {
+.Camel_1 {
   color: #D1CBB8;
 }
 
-.Camel-2 {
+.Camel_2 {
   color: #E2DCC8;
 }
 
-.Camel-3 {
+.Camel_3 {
   color: #F9F4EC;
 }
 
