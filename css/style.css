@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -63,6 +64,110 @@ table {
   background-color: #0F3D3E;
   color: white;
   border: 0px;
+}
+
+.article {
+  height: 1145px;
+}
+.article .side_nav {
+  outline: 1px solid black;
+  height: 100%;
+  width: 190px;
+  box-sizing: border-box;
+}
+.article .side_nav .side_nav_wrap {
+  height: 100%;
+  border: 1px solid #000;
+  background-color: #0F3D3E;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.article .side_nav .side_nav_wrap li {
+  list-style: none;
+}
+.article .side_nav .side_nav_wrap li a {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_logo {
+  /* loog設定 */
+  position: relative;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_logo::after {
+  /* logo下面的分隔線 */
+  display: block;
+  content: "";
+  height: 1px;
+  width: 177px;
+  background-color: #ccc;
+  position: absolute;
+  left: 5px;
+  bottom: 15px;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_logo a {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px 30px;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_logo p {
+  order: 2;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_logo img {
+  order: 1;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select {
+  display: flex;
+  margin-bottom: 5px;
+  /* 選單文字區 */
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_icon {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-top: 5px;
+  gap: 10px;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_icon img {
+  margin: 0px 20px;
+  display: block;
+  width: 16px;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_icon .side_nav_line {
+  display: block;
+  background-color: #fff;
+  width: 1px;
+  height: 65px;
+  margin-top: 15px;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text:nth-child(2) a, .article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text:nth-child(6) a, .article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text:nth-child(7) a {
+  margin-bottom: 0px;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text ion-icon.chevron_down {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  left: 100px;
+  top: 6px;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_subNav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 body {
