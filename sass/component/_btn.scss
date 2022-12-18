@@ -2,8 +2,29 @@
 //   @include btn(300px,red,white,12px)
 // }
 
-.server-btn{
-    @include btnGetor(378px, 25px, 18px,
-                      white,#0F3D3E, white,null,
-                      white, 5px );
+.server_btn{
+    font-size: 20px;
+    @include btnGetor(335px, 15.5px, 18px,
+                      white,$green-1, white,null,
+                      white, 5px,1px );
+    @include moblie(){
+        max-width: 336px;
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+.home_btn{
+   font-size: 24px;
+   @include btnGetor(480px, 18px, 18px,
+                     $green-1,$green-1, white,white,
+                     $green-1, 5px,1px );
+
+   @include moblie(){
+       font-size: 16px;
+        max-width: 378px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
 }
