@@ -158,7 +158,7 @@ h6 {
   letter-spacing: 0.98px;
 }
 
-.font12 {
+.font12, .save_btn {
   font-size: 12px;
   letter-spacing: 0.84px;
 }
@@ -191,24 +191,32 @@ h6 {
 }
 .server_btn {
   font-size: 20px;
+  letter-spacing: 0.4em;
   box-sizing: border-box;
   width: 335px;
   padding: 15.5px 18px;
   cursor: pointer;
   color: white;
   border: 1px solid white;
-  border-radius: 5px;
-  transition: 0.2s all ease-in-out;
+  transition: 0.25s all ease-in-out;
   text-align: center;
 }
 .server_btn:hover {
   background-color: #0F3D3E;
   color: white;
-  border: 0px;
+  border: 0 solid;
+}
+.server_btn:active {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  filter: grayscale(60%);
+}
+@media all and (max-width: 720px) {
+  .server_btn {
+    max-width: 335px;
+  }
 }
 @media all and (max-width: 428px) {
   .server_btn {
-    max-width: 336px;
     width: 95%;
     margin: 0 auto;
   }
@@ -216,29 +224,255 @@ h6 {
 
 .home_btn {
   font-size: 24px;
+  letter-spacing: 0.165em;
   box-sizing: border-box;
   width: 480px;
-  padding: 18px 18px;
+  padding: 13.5px 18px;
   cursor: pointer;
   color: #0F3D3E;
-  border: 1px solid #0F3D3E;
-  border-radius: 5px;
-  transition: 0.2s all ease-in-out;
-  text-align: center;
   background-color: white;
+  border: 1px solid #0F3D3E;
+  transition: 0.25s all ease-in-out;
+  text-align: center;
 }
 .home_btn:hover {
   background-color: #0F3D3E;
   color: white;
-  border: 0px;
+  border: 0 solid;
+}
+.home_btn:active {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  filter: grayscale(60%);
+}
+@media all and (max-width: 720px) {
+  .home_btn {
+    max-width: 378px;
+  }
 }
 @media all and (max-width: 428px) {
   .home_btn {
+    padding: 8px 18px;
+    margin: 0 auto;
+    letter-spacing: 0.4em;
     font-size: 16px;
-    max-width: 378px;
+    width: 95%;
+  }
+}
+
+.checkout_btn {
+  font-size: 16px;
+  letter-spacing: 0.4em;
+  box-sizing: border-box;
+  width: 380px;
+  padding: 12px 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #0F3D3E;
+  border: 1px solid #0F3D3E;
+  transition: 0.25s all ease-in-out;
+  text-align: center;
+}
+.checkout_btn:hover {
+  background-color: white;
+  color: #0F3D3E;
+  border: 1px #0F3D3E solid;
+}
+.checkout_btn:active {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  filter: grayscale(60%);
+}
+@media all and (max-width: 428px) {
+  .checkout_btn {
+    font-size: 16px;
     width: 95%;
     margin: 0 auto;
   }
+}
+
+.inCart_btn1 {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  box-sizing: border-box;
+  width: 145px;
+  padding: 5px 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #0F3D3E;
+  border: 1px solid #0F3D3E;
+  transition: 0.25s all ease-in-out;
+  text-align: center;
+}
+.inCart_btn1:hover {
+  background-color: white;
+  color: #0F3D3E;
+  border: 1px #0F3D3E solid;
+}
+.inCart_btn1:active {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  filter: grayscale(60%);
+}
+@media all and (max-width: 428px) {
+  .inCart_btn1 {
+    max-width: 145px;
+    width: 95%;
+  }
+}
+
+.inCart_btn2 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  box-sizing: border-box;
+  width: 220px;
+  padding: 16px 37.5px;
+  cursor: pointer;
+  color: #0F3D3E;
+  background-color: white;
+  border: 1px solid #0F3D3E;
+  transition: 0.25s all ease-in-out;
+  text-align: center;
+}
+.inCart_btn2:hover {
+  background-color: #0F3D3E;
+  color: white;
+  border: 0 solid;
+}
+.inCart_btn2:active {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  filter: grayscale(60%);
+}
+@media all and (max-width: 428px) {
+  .inCart_btn2 {
+    font-size: 14px;
+    max-width: 185px;
+    padding: 12.5px 37.5px;
+    width: 95%;
+  }
+}
+
+.next_btn {
+  font-weight: 400;
+  letter-spacing: 0.4em;
+  box-sizing: border-box;
+  width: 305px;
+  padding: 8.75px 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #B91646;
+  border: 1px solid #B91646;
+  transition: 0.25s all ease-in-out;
+  text-align: center;
+}
+.next_btn:hover {
+  background-color: white;
+  color: #B91646;
+  border: 1px #B91646 solid;
+}
+.next_btn:active {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  filter: grayscale(60%);
+}
+@media all and (max-width: 428px) {
+  .next_btn {
+    max-width: 380px;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.prev_btn {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  box-sizing: border-box;
+  width: 305px;
+  padding: 8.75px 18px;
+  cursor: pointer;
+  color: #0F3D3E;
+  background-color: white;
+  border: 1px solid #0F3D3E;
+  transition: 0.25s all ease-in-out;
+  text-align: center;
+}
+.prev_btn:hover {
+  background-color: #0F3D3E;
+  color: white;
+  border: 0 solid;
+}
+.prev_btn:active {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  filter: grayscale(60%);
+}
+@media all and (max-width: 720px) {
+  .prev_btn {
+    max-width: 380px;
+  }
+}
+@media all and (max-width: 428px) {
+  .prev_btn {
+    margin: 0 auto;
+    letter-spacing: 0.4em;
+    width: 95%;
+  }
+}
+
+.save_btn {
+  font-weight: 1000;
+  box-sizing: border-box;
+  width: 85px;
+  padding: 4.5px 10px;
+  cursor: pointer;
+  color: black;
+  background-color: #F9F4EC;
+  border: 1px solid #8B8B8B;
+  transition: 0.25s all ease-in-out;
+  text-align: center;
+}
+.save_btn:hover {
+  background-color: #D1CBB8;
+  color: white;
+  border: 0 solid;
+}
+.save_btn:active {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  filter: grayscale(60%);
+}
+
+.order-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 10px;
+}
+.order-list .timeorder_btn {
+  position: relative;
+  text-align: center;
+  font-size: 8px;
+  width: 115px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+.order-list .timeorder_btn {
+  background-color: #59886B;
+}
+.order-list .timeorder_btn.is_Order {
+  background-color: #B91646;
+}
+.order-list .timeorder_btn.is_Order:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background-color: white;
+  top: 15%;
+  right: 5%;
+  font-size: 15px;
+  font-weight: bold;
+}
+.order-list .timeorder_btn:hover {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  filter: grayscale(40%);
 }
 
 .article {
