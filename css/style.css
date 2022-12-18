@@ -133,13 +133,22 @@ table {
   display: flex;
   align-items: center;
 }
-.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text .-on > .chevron_down {
-  display: none;
-}
-.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text ion-icon.chevron_down {
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text ion-icon {
   display: inline-block;
   font-size: 15px;
   color: #fff;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text ion-icon.chevron_down {
+  display: inline-block;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text .chevron_down.-on {
+  display: none;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text ion-icon.chevron_up {
+  display: none;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text ion-icon.chevron_up.-on {
+  display: inline-block;
 }
 .article .side_nav .side_nav_wrap .side_nav_wrap_select .side_subNav_wrap {
   display: flex;
