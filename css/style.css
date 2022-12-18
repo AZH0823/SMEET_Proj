@@ -83,13 +83,13 @@ table {
   display: flex;
   flex-direction: column;
 }
-.article .side_nav .side_nav_wrap li {
-  list-style: none;
-}
-.article .side_nav .side_nav_wrap li a {
+.article .side_nav .side_nav_wrap a {
   text-decoration: none;
   color: #fff;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 .article .side_nav .side_nav_wrap .side_nav_wrap_logo {
   /* loog設定 */
@@ -110,6 +110,8 @@ table {
   display: flex;
   align-items: center;
   margin: 20px 0px 30px;
+  gap: 0px;
+  justify-content: flex-start;
 }
 .article .side_nav .side_nav_wrap .side_nav_wrap_logo p {
   order: 2;
@@ -119,29 +121,8 @@ table {
 }
 .article .side_nav .side_nav_wrap .side_nav_wrap_select {
   display: flex;
+  justify-content: center;
   margin-bottom: 5px;
-  /* 選單文字區 */
-}
-.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_icon {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  margin-top: 5px;
-  gap: 10px;
-}
-.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_icon img {
-  margin: 0px 20px;
-  display: block;
-  width: 16px;
-}
-.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_icon .side_nav_line {
-  display: block;
-  background-color: #fff;
-  width: 1px;
-  height: 65px;
-  margin-top: 15px;
 }
 .article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item {
   display: flex;
@@ -151,23 +132,31 @@ table {
 .article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text {
   display: flex;
   align-items: center;
-  position: relative;
 }
-.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text:nth-child(2) a, .article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text:nth-child(6) a, .article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text:nth-child(7) a {
-  margin-bottom: 0px;
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text .-on > .chevron_down {
+  display: none;
 }
 .article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text ion-icon.chevron_down {
   display: inline-block;
   font-size: 15px;
   color: #fff;
-  position: absolute;
-  left: 100px;
-  top: 6px;
 }
-.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_subNav {
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_subNav_wrap {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  display: none;
+  position: relative;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_subNav_wrap::after {
+  display: block;
+  content: "";
+  width: 0.5px;
+  height: 71px;
+  background-color: #fff;
+  position: absolute;
+  left: 8px;
+  top: 0;
 }
 
 body {

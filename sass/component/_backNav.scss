@@ -15,15 +15,13 @@
             display: flex;
             flex-direction: column;
 
-            & li {
-                list-style: none;
-
-                & a {
-                    text-decoration: none;
-                    color: #fff;
-                    margin-bottom: 10px;
-                }
-
+            & a {
+                text-decoration: none;
+                color: #fff;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                gap: 24px;
             }
 
             .side_nav_wrap_logo {
@@ -47,6 +45,8 @@
                     display: flex;
                     align-items: center;
                     margin: 20px 0px 30px;
+                    gap: 0px;
+                    justify-content: flex-start;
                 }
 
                 & p {
@@ -60,70 +60,52 @@
 
             .side_nav_wrap_select {
                 display: flex;
+                justify-content: center;
                 margin-bottom: 5px;
-
-                /* 選單文字區 */
-                .side_nav_wrap_icon {
-                    margin-bottom: 20px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: start;
-                    margin-top: 5px;
-                    gap: 10px;
-                    & img {
-                        margin: 0px 20px;
-                        display: block;
-                        width: 16px;
-                    }
-
-                    .side_nav_line {
-                        display: block;
-                        background-color: #fff;
-                        width: 1px;
-                        height: 65px;
-                        margin-top: 15px;
-                        // position: absolute;
-                        // left: 34px;
-                        // top: 31px;
-                    }
-                }
 
                 .side_nav_wrap_item {
                     display: flex;
                     flex-direction: column;
                     gap: 5px;
-
+                    
                     .side_nav_wrap_text {
                         display: flex;
                         align-items: center;
-                        position: relative;
-
-                        &:nth-child(2) a,
-                        &:nth-child(6) a,
-                        &:nth-child(7) a{
-                            margin-bottom: 0px;
+                        // position: relative;
+                        .-on > .chevron_down{
+                            display: none;
                         }
-
+                        
                         ion-icon.chevron_down {
                             display: inline-block;
                             font-size: 15px;
                             color: #fff;
-
-                            position: absolute;
-                            left: 100px;
-                            top: 6px;
                         }
+
                     }
 
                 }
-
-                .side_nav_wrap_subNav {
+                .side_subNav_wrap {
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
+                    display: none;
+
+                    position: relative;
+                    &::after{
+                        display: block;
+                        content: "";
+                        width: 0.5px;
+                        height: 71px;
+                        background-color: #fff;
+
+                        position: absolute;
+                        left: 8px;
+                        top: 0;
+                    }
                 }
             }
         }
     }
 }
+
