@@ -33,11 +33,13 @@
 @import "./page/shopMall";
 @import "./page/shopMallDetail";
 
+
 body{
-  font-family:"Noto Sans TC";
+  font-family: "Didot", "Noto Sans TC", "Noto Serif TC";
   line-height: 1.6;
   font-size: 16px;
   letter-spacing: 1px;
+  box-sizing: border-box;
 }
 .fulid_wrapper{
   margin: 0  auto;
@@ -61,16 +63,16 @@ body{
 
 //========================== 字型
 //  英文字
-.font_eng{
+.font_family_eng{
   font-family: $font_family_e;
 }
 // 中文明體(標題字用到)
-.font_tc{
+.font_family_tc{
   font-family: $font_family_c;
 }
 
 // 中文黑體(內文)
-.font_tc2{
+.font_family_tc2{
   font-family: $font_family_c2;
 }
 
