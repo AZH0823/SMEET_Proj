@@ -159,6 +159,27 @@ table {
   top: 0;
 }
 
+ul {
+  list-style: none;
+  position: fixed;
+  top: 100px;
+  right: 0px;
+}
+ul li {
+  font-family: "Noto Serif TC";
+  width: 38px;
+  height: 38px;
+  line-height: 19px;
+  padding: 10px;
+  text-align: center;
+  border: 0px solid #333;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+ul li :hover {
+  background: #000;
+}
+
 body {
   font-family: "Didot", "Noto Sans TC", "Noto Serif TC";
   line-height: 1.6;
