@@ -69,6 +69,15 @@ table {
   border: 0px;
 }
 
+.index {
+  background-color: bisque;
+}
+
+.header {
+  width: 100px;
+  height: 100px;
+}
+
 body {
   font-family: "Noto Sans TC";
   line-height: 1.6;
@@ -220,4 +229,6 @@ h6 {
 
 .gray {
   color: #898989;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
