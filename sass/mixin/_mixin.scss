@@ -29,16 +29,17 @@
 // btn Gentor
 @mixin btnGetor($width, $paddingX, $paddingY,
             $color, $hoverbgc, $hoverColor,$bgc:null,
-           $border_color:null, $border_radius:null) {
+           $border_color:null, $border_radius:null,$border:0) {
   box-sizing: border-box;
   width: $width;
   padding: $paddingX $paddingY;
   cursor: pointer;
   color:$color;
-  border: 1px solid $border_color;
+  border: $border solid $border_color;
   border-radius: $border_radius;
   transition: 0.2s all ease-in-out;
   text-align: center;
+  background-color: $bgc;
 
   &:hover {
     background-color: $hoverbgc;
