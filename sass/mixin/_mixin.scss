@@ -7,7 +7,7 @@
     }
 }
 // 428px
-@mixin moblie(){
+@mixin mobile(){
     @media all and (max-width: $m_breakpoint){
         @content;
     }
@@ -29,23 +29,26 @@
 // btn Gentor
 @mixin btnGetor($width, $paddingX, $paddingY,
             $color, $hoverbgc, $hoverColor,$bgc:null,
-           $border_color:null, $border_radius:null,$border:0) {
+           $border_color:null, $hoverborder:0,$hoverborderColor:0) {
   box-sizing: border-box;
   width: $width;
   padding: $paddingX $paddingY;
   cursor: pointer;
   color:$color;
-  border: $border solid $border_color;
-  border-radius: $border_radius;
-  transition: 0.2s all ease-in-out;
+  background-color: $bgc ;
+  @if($hoverborder != 0){
+      border: 1px solid $border_color;
+  }
+  transition: 0.25s all ease-in-out;
   text-align: center;
-  background-color: $bgc;
 
   &:hover {
     background-color: $hoverbgc;
-    color: $hoverColor;
-    border: 0px;
+    color: $hoverColor; 
+    border: $hoverborder $hoverborderColor solid ;
   }
-
-
+  &:active{
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    filter:grayscale(60%);;
+  }
 }

@@ -1,10 +1,8 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 7 | @import "./backNav";
- *   |         ^^^^^^^^^^^
- *   '
- *   sass/component/_component.scss 7:9  @import
- *   sass/style.scss 10:9                root stylesheet */
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
