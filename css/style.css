@@ -274,6 +274,7 @@ table {
 
 ._index_feeback {
   display: flex;
+  justify-content: space-between;
 }
 
 ._if1, ._if2, ._if3 {
@@ -298,7 +299,7 @@ table {
 }
 
 ._p12 {
-  padding-top: 3px;
+  padding-top: 10px;
   font-size: 12px;
 }
 
@@ -309,8 +310,41 @@ table {
 ._star_line {
   width: 30px;
   height: 1px;
-  background-color: #1d0101;
+  background-color: #E2DCC8;
   margin: auto 0;
+  margin-left: 110px;
+  margin-right: 5px;
+}
+
+._star_line + ._p12 {
+  color: #E2DCC8;
+}
+
+._if_bottom {
+  margin-top: 10px;
+}
+
+._ratings {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  color: #ddd;
+  overflow: hidden;
+  font-size: 25px;
+}
+
+._full_star, ._full_star2 {
+  width: 90%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #F5CB35;
+}
+
+._full_star2 {
+  width: 100%;
 }
 
 body {
