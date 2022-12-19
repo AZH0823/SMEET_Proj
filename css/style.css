@@ -23,10 +23,3 @@ body::before {
   border-bottom: 2px solid black;
   content: "Error: Undefined mixin.\a    \2577 \a 34 \2502  \250c    @include moblie(){\a 35 \2502  \2502      @each $k, $v in $font_size_rwd{\a 36 \2502  \2502          #{$k}{\a 37 \2502  \2502              font-size: $v;\a 38 \2502  \2502              letter-spacing: $v * 0.07;\a 39 \2502  \2502          }\a 40 \2502  \2502      }\a 41 \2502  \2514    }\a    \2575 \a   sass\\component\\_font.scss 34:3      @import\a   sass\\component\\_component.scss 2:9  @import\a   sass\\style.scss 10:9                root stylesheet";
 }
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 1280px;
-}
-
-/*# sourceMappingURL=style.css.map */
