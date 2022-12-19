@@ -1,90 +1,21 @@
 @charset "UTF-8";
-
 * {
   box-sizing: border-box;
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -94,17 +25,8 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -112,20 +34,16 @@ body {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -250,33 +168,27 @@ h6 {
     font-size: 36px;
     letter-spacing: 2.52px;
   }
-
   h2 {
     font-size: 30px;
     letter-spacing: 2.1px;
   }
-
   h3 {
     font-size: 20px;
     letter-spacing: 1.4px;
   }
-
   h4 {
     font-size: 20px;
     letter-spacing: 1.4px;
   }
-
   h5 {
     font-size: 16px;
     letter-spacing: 1.12px;
   }
-
   h6 {
     font-size: 16px;
     letter-spacing: 1.12px;
   }
 }
-
 .server_btn {
   font-size: 20px;
   letter-spacing: 0.4em;
@@ -289,7 +201,6 @@ h6 {
   transition: 0.25s all ease-in-out;
   text-align: center;
 }
-
 .server_btn:hover {
   background-color: #0F3D3E;
   color: white;
@@ -304,7 +215,6 @@ h6 {
     max-width: 335px;
   }
 }
-
 @media all and (max-width: 428px) {
   .server_btn {
     width: 95%;
@@ -325,7 +235,6 @@ h6 {
   transition: 0.25s all ease-in-out;
   text-align: center;
 }
-
 .home_btn:hover {
   background-color: #0F3D3E;
   color: white;
@@ -340,7 +249,6 @@ h6 {
     max-width: 378px;
   }
 }
-
 @media all and (max-width: 428px) {
   .home_btn {
     padding: 8px 18px;
@@ -719,14 +627,12 @@ header .slide_header .bottom_footer .btn_footer a {
 .article {
   height: 1145px;
 }
-
 .article .side_nav {
   outline: 1px solid black;
   height: 100%;
   width: 190px;
   box-sizing: border-box;
 }
-
 .article .side_nav .side_nav_wrap {
   height: 100%;
   border: 1px solid #000;
@@ -735,7 +641,6 @@ header .slide_header .bottom_footer .btn_footer a {
   display: flex;
   flex-direction: column;
 }
-
 .article .side_nav .side_nav_wrap a {
   text-decoration: none;
   color: #fff;
@@ -744,12 +649,10 @@ header .slide_header .bottom_footer .btn_footer a {
   justify-content: center;
   gap: 24px;
 }
-
 .article .side_nav .side_nav_wrap .side_nav_wrap_logo {
   /* loog設定 */
   position: relative;
 }
-
 .article .side_nav .side_nav_wrap .side_nav_wrap_logo::after {
   /* logo下面的分隔線 */
   display: block;
@@ -761,7 +664,6 @@ header .slide_header .bottom_footer .btn_footer a {
   left: 5px;
   bottom: 15px;
 }
-
 .article .side_nav .side_nav_wrap .side_nav_wrap_logo a {
   display: flex;
   align-items: center;
@@ -769,42 +671,43 @@ header .slide_header .bottom_footer .btn_footer a {
   gap: 0px;
   justify-content: flex-start;
 }
-
 .article .side_nav .side_nav_wrap .side_nav_wrap_logo p {
   order: 2;
 }
-
 .article .side_nav .side_nav_wrap .side_nav_wrap_logo img {
   order: 1;
 }
-
 .article .side_nav .side_nav_wrap .side_nav_wrap_select {
   display: flex;
   justify-content: center;
   margin-bottom: 5px;
 }
-
 .article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-
 .article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text {
   display: flex;
   align-items: center;
 }
-
-.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text .-on>.chevron_down {
-  display: none;
-}
-
-.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text ion-icon.chevron_down {
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text ion-icon {
   display: inline-block;
   font-size: 15px;
   color: #fff;
 }
-
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text ion-icon.chevron_down {
+  display: inline-block;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text .chevron_down.-on {
+  display: none;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text ion-icon.chevron_up {
+  display: none;
+}
+.article .side_nav .side_nav_wrap .side_nav_wrap_select .side_nav_wrap_item .side_nav_wrap_text ion-icon.chevron_up.-on {
+  display: inline-block;
+}
 .article .side_nav .side_nav_wrap .side_nav_wrap_select .side_subNav_wrap {
   display: flex;
   flex-direction: column;
@@ -812,7 +715,6 @@ header .slide_header .bottom_footer .btn_footer a {
   display: none;
   position: relative;
 }
-
 .article .side_nav .side_nav_wrap .side_nav_wrap_select .side_subNav_wrap::after {
   display: block;
   content: "";
@@ -1080,10 +982,6 @@ body {
 .wrapper {
   margin: 0 auto;
   max-width: 1280px;
-}
-
-/*# sourceMappingURL=style.css.map */
-
 }
 
 /*# sourceMappingURL=style.css.map */
