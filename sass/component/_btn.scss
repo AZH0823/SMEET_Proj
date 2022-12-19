@@ -9,7 +9,7 @@
     @include pad(){
         max-width: 335px;
     };       
-    @include moblie(){
+    @include mobile(){
         width: 95%;
         margin: 0 auto;
     }
@@ -25,7 +25,7 @@
     @include pad(){
         max-width: 378px;
     };
-    @include moblie(){
+    @include mobile(){
        padding: 8px 18px;
        margin: 0 auto;
        letter-spacing: 0.4em;
@@ -44,7 +44,7 @@
                      white,white, $green-1,$green-1,
                       $green-1, 1px,$green-1);
    
-    @include moblie(){
+    @include mobile(){
         font-size: 16px;
          width: 95%;
          margin: 0 auto;
@@ -60,7 +60,7 @@
                      white,white, $green-1,$green-1,
                       $green-1, 1px,$green-1);
    
-    @include moblie(){
+    @include mobile(){
         max-width: 145px;
          width: 95%;
      }
@@ -74,7 +74,7 @@
     $green-1,$green-1, white,white,
     $green-1, null);
 
-    @include moblie(){
+    @include mobile(){
         font-size: 14px;
         max-width: 185px;
         padding: 12.5px 37.5px;
@@ -91,7 +91,7 @@
     @include btnGetor(305px, 8.75px, 20px,
                      white,white, $red,$red,
                       $red, 1px,$red);
-    @include moblie(){
+    @include mobile(){
         max-width: 380px;
         width: 95%;
         margin: 0 auto;
@@ -107,7 +107,7 @@
     @include pad(){
      max-width: 380px;
     };
-    @include moblie(){
+    @include mobile(){
     margin: 0 auto;
     letter-spacing: 0.4em;
     width: 95%;

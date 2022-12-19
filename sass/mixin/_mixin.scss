@@ -7,7 +7,7 @@
     }
 }
 // 428px
-@mixin moblie(){
+@mixin mobile(){
     @media all and (max-width: $m_breakpoint){
         @content;
     }
