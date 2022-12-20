@@ -5,7 +5,7 @@
 }
 
 ._chef_line{
-    width: 1060px;
+    width: 1125px;
     height: 1px;
     background-color: #8E8E8E;
     margin-bottom: 20px;
@@ -29,7 +29,6 @@
     order:1;
     display: none;
     width:100%;
-    border-bottom: 3px solid #ddd; 
     line-height: 1.6; 
     font-size: .9em; 
     padding: 15px; 
@@ -45,9 +44,23 @@
 
 ._chef_top{
     display: flex;
-
 }
 
 ._chef_top img{
     width: 60%;
+}
+
+._chef_infor{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    flex-wrap: wrap-reverse;
+    text-align: right;
+}
+
+._chef_infor_line{
+    // float: right;
+    width: 300px;
+    height: 1px;
+    background-color: #0F3D3E;
 }
