@@ -1,3 +1,53 @@
-.chefTeam{
 
+._banner img{
+    height: 100%;
+    width: 100%;
+}
+
+._chef_line{
+    width: 1060px;
+    height: 1px;
+    background-color: #8E8E8E;
+    margin-bottom: 20px;
+}
+
+._chef_tab{
+    display:flex;
+    flex-wrap:wrap;
+    margin: 50px;
+}
+._chef_tab input{
+    display:none
+}
+._chef_tab label{
+    margin: 0 25px 5px 15px; 
+    cursor: pointer; 
+    color: rgb(6, 6, 6); 
+    opacity: 0.5;
+}
+._chef_content{
+    order:1;
+    display: none;
+    width:100%;
+    border-bottom: 3px solid #ddd; 
+    line-height: 1.6; 
+    font-size: .9em; 
+    padding: 15px; 
+}
+._chef_tab input:checked + label, ._chef_tab label:hover{
+    opacity: 1; 
+    font-weight:bold;
+}
+._chef_tab input:checked + label + ._chef_content{
+    display: initial;
+}
+
+
+._chef_top{
+    display: flex;
+
+}
+
+._chef_top img{
+    width: 60%;
 }
