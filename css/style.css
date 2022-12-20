@@ -155,8 +155,9 @@ table {
 }
 
 #calendar {
-  width: 1065px;
-  height: 675px;
+  margin: 0 auto;
+  width: 900px;
+  height: 500px;
 }
 
 .fc-h-event .fc-event-title-container {
@@ -498,6 +499,4 @@ h6 {
 
 .gray {
   color: #898989;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
