@@ -69,6 +69,229 @@ table {
   border: 0px;
 }
 
+.banner h1 {
+  margin-left: 80px;
+  color: #0f3d3e;
+}
+.banner img {
+  width: 100%;
+}
+
+.about {
+  height: 1870px;
+}
+.about .about_title {
+  margin: 50px 0;
+}
+.about .about_title h2 {
+  text-align: center;
+  color: #0f3d3e;
+  font-weight: bold;
+}
+.about .about_title .border {
+  margin: 0 auto;
+  width: 72px;
+  height: 1px;
+  background-color: #0f3d3e;
+}
+.about .part1_img {
+  height: 425px; /*can be anything*/
+  width: 740px; /*can be anything*/
+  position: relative;
+}
+.about .part1_img img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 120px;
+  right: 0;
+  margin: auto;
+}
+.about .part1_content {
+  padding-right: 100px;
+  text-align: right;
+  position: absolute;
+  top: 750px;
+  bottom: 0;
+  left: 420px;
+  right: 0;
+  margin: auto;
+}
+.about .part2_img {
+  height: 425px; /*can be anything*/
+  width: 740px; /*can be anything*/
+  position: relative;
+}
+.about .part2_img img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  left: 420px;
+  right: 0;
+  margin: auto;
+}
+.about .part2_content {
+  width: 757px;
+  position: absolute;
+  top: 1200px;
+  bottom: 0;
+  left: 120px;
+  right: 0;
+}
+.about .part3_img {
+  height: 425px; /*can be anything*/
+  width: 740px; /*can be anything*/
+  position: relative;
+}
+.about .part3_img img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 400px;
+  bottom: 0;
+  left: 120px;
+  right: 0;
+  margin: auto;
+}
+.about .part3_content {
+  padding-right: 100px;
+  text-align: right;
+  position: absolute;
+  top: 1800px;
+  bottom: 0;
+  left: 420px;
+  right: 0;
+  margin: auto;
+}
+
+.serve {
+  height: 1163px;
+  background-color: #E2DCC8;
+}
+.serve .serve_title {
+  margin: 50px 0;
+  padding-top: 50px;
+}
+.serve .serve_title h2 {
+  text-align: center;
+  color: #0f3d3e;
+}
+.serve .serve_title .border {
+  margin: 0 auto;
+  width: 72px;
+  height: 1px;
+  background-color: #0f3d3e;
+}
+.serve .serve_grid {
+  width: 1023px;
+  height: 773px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.serve .serve_grid .reserve {
+  background-image: url(../img/about_img/about_box_reserve.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.serve .serve_grid .shopmall {
+  background-image: url(../img/about_img/about_box_shopmall.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.serve .serve_grid .menu {
+  background-image: url(../img/about_img/about_box_menu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.serve .serve_grid .team {
+  background-image: url(../img/about_img/about_box_team.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.contact {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.contact .contact_title {
+  margin: 50px 0;
+}
+.contact .contact_title h2 {
+  text-align: center;
+  color: #0f3d3e;
+}
+.contact .contact_title .border {
+  margin: 0 auto;
+  width: 72px;
+  height: 1px;
+  background-color: #0f3d3e;
+}
+.contact .name_email_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact .name_email_wrapper input {
+  width: 450px;
+  margin-top: 15px;
+  line-height: 30px;
+}
+.contact .subject_message_submit_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.contact .subject_message_submit_wrapper textarea {
+  width: 900px;
+  height: 164px;
+}
+
+.qanda {
+  width: 80%;
+  margin: 0 auto;
+}
+.qanda .qa_title {
+  margin: 50px 0;
+  padding-top: 50px;
+}
+.qanda .qa_title h2 {
+  text-align: center;
+  color: #0f3d3e;
+}
+.qanda .qa_title .border {
+  margin: 0 auto;
+  width: 72px;
+  height: 1px;
+  background-color: #0f3d3e;
+}
+
 body {
   font-family: "Noto Sans TC";
   line-height: 1.6;
@@ -220,4 +443,6 @@ h6 {
 
 .gray {
   color: #898989;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
