@@ -1059,36 +1059,25 @@ header .slide_header .bottom_footer .btn_footer a {
   background-color: #0f3d3e;
 }
 
-._banner img {
+.chef ._banner img {
   height: 100%;
   width: 100%;
 }
-
-._chef_line {
-  width: 1125px;
-  height: 1px;
-  background-color: #8E8E8E;
-  margin-bottom: 20px;
-}
-
-._chef_tab {
+.chef ._chef_tab {
   display: flex;
   flex-wrap: wrap;
   margin: 50px;
 }
-
-._chef_tab input {
+.chef ._chef_tab input {
   display: none;
 }
-
-._chef_tab label {
+.chef ._chef_tab label {
   margin: 0 25px 5px 15px;
   cursor: pointer;
   color: rgb(6, 6, 6);
   opacity: 0.5;
 }
-
-._chef_content {
+.chef ._chef_tab ._chef_content {
   order: 1;
   display: none;
   width: 100%;
@@ -1096,36 +1085,36 @@ header .slide_header .bottom_footer .btn_footer a {
   font-size: 0.9em;
   padding: 15px;
 }
-
-._chef_tab input:checked + label, ._chef_tab label:hover {
-  opacity: 1;
-  font-weight: bold;
+.chef ._chef_tab ._chef_content ._chef_line {
+  width: 1125px;
+  height: 1px;
+  background-color: #8E8E8E;
+  margin-bottom: 20px;
 }
-
-._chef_tab input:checked + label + ._chef_content {
-  display: initial;
-}
-
-._chef_top {
+.chef ._chef_tab ._chef_content ._chef_top {
   display: flex;
 }
-
-._chef_top img {
+.chef ._chef_tab ._chef_content ._chef_top img {
   width: 60%;
 }
-
-._chef_infor {
+.chef ._chef_tab ._chef_content ._chef_top ._chef_infor {
   display: flex;
   flex-direction: column;
   z-index: 1;
   flex-wrap: wrap-reverse;
   text-align: right;
 }
-
-._chef_infor_line {
+.chef ._chef_tab ._chef_content ._chef_top ._chef_infor ._chef_infor_line {
   width: 300px;
   height: 1px;
   background-color: #0F3D3E;
+}
+.chef .input:checked + label, .chef label:hover {
+  opacity: 1;
+  font-weight: bold;
+}
+.chef input:checked + label + ._chef_content {
+  display: initial;
 }
 
 .index .wrapper ._index_reserve {
